@@ -68,4 +68,5 @@ class Server:
             'prev_page': page - 1 if start > 0 else None,
             'total_pages': total_pages,
         }
+
         return (page_info)
