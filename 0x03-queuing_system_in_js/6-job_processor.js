@@ -9,7 +9,7 @@ const job = queue.create('push_notification_code', {
   message: 'Account registered',
 });
 
-//queue process that will listen to new jobs on push_notification_code
+//queue process that will listen to new jobs on: push_notification_code
 job
   .on('enqueue', () => {
     console.log('Notification job created:', job.id);
